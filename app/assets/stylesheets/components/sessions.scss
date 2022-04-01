@@ -1,0 +1,25 @@
+.exex {
+  color: blue;
+}
+
+.sign-up-left {
+
+  .phone {
+  background-image: url('./sign_up/phone.png');
+  background-repeat: no-repeat;
+  background-position: right 0;
+  background-size: 454px 618px;
+  position: relative;
+  height: 618px;
+
+    .pictures {
+      position: absolute;
+      top: 20px;
+      right: 55px;
+
+      .carousel-item {
+      }
+    }
+}
+
+}
