@@ -1,0 +1,61 @@
+<div class="main">
+<div class="container">
+  <div class="row d-flex align-items-center">
+    <div class="col-lg-6 sign-up-left">
+      <div class="phone">
+        <div class="pictures">
+          <div id="carouselExampleFade" class="carousel carousel-fade" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <%= image_tag("sign_up/ss1.png") %>
+              </div>
+              <div class="carousel-item">
+                <%= image_tag("sign_up/ss2.png") %>
+              </div>
+              <div class="carousel-item">
+                <%= image_tag("sign_up/ss3.png") %>
+              </div>
+              <div class="carousel-item">
+                <%= image_tag("sign_up/ss4.png") %>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-lg-6 sign-up-right">
+
+      <div class="log-in-box">
+
+        <%= image_tag("sign_up/logo.png", width: 180, class: "sign-up-logo") %>
+
+        <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+        <div class="form-group">
+        <%= f.email_field :email, autofocus: true, autocomplete: "email", placeholder: "Email" %>
+        </div>
+
+        <div class="form-group">
+        <%= f.password_field :password, autocomplete: "current-password", placeholder: "Password" %>
+        </div>
+
+        <div class="actions">
+        <%= f.submit "Log in", class: "btn btn-primary log-in-btn" %>
+        </div>
+        <% end %>
+      </div>
+      <div class="sign-up-box">
+        <p class="create-account">Don't have an account? <%= link_to "Sign Up", new_user_registration_path, style: "font-weight: bold; text-decoration: none"  %></p>
+      </div>
+      <div class="apps">
+        <p class="text-center" style="font-size: 14px;">Get the app.</p>
+        <div class="d-flex justify-content-center">
+          <%= image_tag("sign_up/appstore", width: 135, style: "padding: 0 5px;") %>
+          <%= image_tag("sign_up/googleplay", width: 135, style: "padding: 0 5px") %>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+</div>
