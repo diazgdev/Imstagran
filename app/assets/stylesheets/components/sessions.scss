@@ -1,9 +1,4 @@
-.exex {
-  color: blue;
-}
-
 .sign-up-left {
-
   .phone {
   background-image: url('./sign_up/phone.png');
   background-repeat: no-repeat;
@@ -11,15 +6,27 @@
   background-size: 454px 618px;
   position: relative;
   height: 618px;
+  }
 
-    .pictures {
+  .pictures {
       position: absolute;
       top: 20px;
       right: 55px;
-
-      .carousel-item {
-      }
-    }
+  }
 }
 
+.sign-up-right {
+  .sign-up-box {
+    background-color: #ffffff;
+    border: 1px solid #d1d1d1;
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .log-in-btn {
+    font-size: 15px;
+    padding: 2px 70px;
+  }
 }
