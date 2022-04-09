@@ -1,4 +1,9 @@
 <h1>Pages#home</h1>
 <p>Find me in app/views/pages/home.html.erb</p>
 
+<%# Displaying avatar resized to 100x100 px %>
+<%= image_tag(current_user.avatar.variant(resize_to_fill: [100, 100]), class: "rounded-circle") %>
+<%# Displaying Full size avatar %>
+<%= image_tag(current_user.avatar) %>
+
 <%= link_to "Log Out", destroy_user_session_path, method: :delete %>
