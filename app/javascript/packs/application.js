@@ -14,3 +14,12 @@ ActiveStorage.start()
 
 import 'bootstrap/dist/js/bootstrap'
 import "bootstrap/dist/css/bootstrap";
+
+window.bootstrap = require('bootstrap');
+
+document.addEventListener('turbolinks:load', function () {
+  let toastElList = [].slice.call(document.querySelectorAll('.toast'))
+  let toastList = toastElList.map(function (toastEl) {
+    return new bootstrap.Toast(toastEl).show() // No need for options; use the default options
+  })
+})
